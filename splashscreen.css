@@ -23,6 +23,10 @@ body{
     
  }
 
+img{
+    max-width: 70%;
+}
+
 footer{
     margin-top: 560px;
     margin-left: 650px;    
