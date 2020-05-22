@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta http-equiv="cache-control" content="no-cache"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">  
     <link rel="stylesheet" href="css/animate.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>  
@@ -22,7 +21,7 @@
           <a class="navbar-brand" style="margin-left: 10px;" href="index.html">
             <img width="60" height="60" src="images/logos/LogoFAS_Blanco.png">
           </a>
-          <button class="navbar-toggler light text-white"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler light text-white"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
             <i class="fa fa-bars" aria-hidden="true"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,43 +38,144 @@
               <li class="nav-item">
                 <a class="nav-link text-light" href="Contactanos.html">Contactanos</a>
               </li>
-              <a class="navbar-brand" style="margin-left: 5px" href="https://www.facebook.com/ITMoreliaOficial">
-                <img width="40" height="40" src="images/iconos/FB.png">
+              <a class="navbar-brand text-white" style="margin-left: 10px" href="https://www.facebook.com/ITMoreliaOficial">
+                <i class="fab fa-facebook" style="font-size: 35px;"></i>
               </a>
-              <a class="navbar-brand" style="margin-left: 5px" href="https://www.instagram.com/tecnm_campus_morelia/">
-                <img width="40" height="40" src="images/iconos/IG.png">
+              <a class="navbar-brand text-white" style="margin-left: 10x" href="https://www.instagram.com/tecnm_campus_morelia/">
+                <i class="fab fa-instagram" style="font-size: 35px;"></i>
               </a>    
             </ul>
           </div>
       </nav>
 
       
-      <div class="text-center py-5" style="background: #d7dbdb"> <!-- RESPONSABLES-->
-        <div class="container " > <!-- color texto -->
-        <h1 class="display-5 text-center">Contactos</h1> <br>
-        </div> 
-        
-          <form action="enviar.php" method="post">
-            <h1>Enviar Datos</h1>
-              <input type="text" name="Nombre" placeholder="Nombre" required >
-              <input type="text" name="Correo" placeholder="correo" required>
-              <input type="text" name="telefono" placeholder="Telefono" required>
-              <textarea name="Mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
-              <input type="submit" value="ENVIAR" id="boton">  
-          </form>
-         
-         
+      
+      <div class="text-center py-5 " style="background: #d7dbdb"> <!-- RESPONSABLES-->
+        <div class="row container-fluid" >
+            
+          <div class="col">
+              <h1 class="display-5 text-center">Ubicación</h1> <br><br>
+            <div class="map-responsive container shadow p-3 mb-5"  style="height: 468px;background: rgba(0,0,0,0.2)"> 
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.7575526004593!2d-101.18800878593527!3d19.72294363644487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf001c256ae856856!2sTechnological%20Institute%20of%20Morelia!5e0!3m2!1sen!2smx!4v1590122353320!5m2!1sen!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div><br><br>     
+           </div>
+            
+            <div class="col">
+                <h1 class="display-5 text-center">Enviar Datos</h1><br><br>
+                <div class="container shadow p-3 mb-5" style="background: rgba(0,0,0,0.2)">
+                <form action="enviar.php" method="post">
+                  <input class="nombre" type="text" name="Nombre" placeholder="Nombre" required >
+                  <input class="correo" type="text" name="Correo" placeholder="correo" required>
+                  <input class="telefono" type="text" name="telefono" placeholder="Telefono" required>
+                  <textarea class="mensaje" name="Mensaje" placeholder="Escriba aquí su mensaje" required></textarea> <br>
+                  <input class="btn btn-lg shadow-lg p-3 mb-5 rounded text-white" type="submit" value="ENVIAR" id="boton" style="background: #009688">  
+                </form>
+                </div>    
+            </div>
+            
+          </div>
       </div>
-      
-      
-       
-      
-      
-        <section style="background: #2f3232; margin-top: 30px;" > <!-- FOOTER -->
-            <footer class="footer text-xs-center text-white">
-                <div class="container" style="background: #2f3232;">
-                    <p class="text-center">Designed by : ITM </p>
-                </div>
+    
+        <section style="background:  #021428;  " > <!-- FOOTER -->
+            <footer class="page-footer font-small stylish-color-dark pt-4 text-white container">
+
+          <!-- Footer Links -->
+          <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-4 mx-auto">
+
+                <!-- Content -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Fábrica Académica de Software</h5>
+                <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                  consectetur
+                  adipisicing elit.</p>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Ubicación</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://goo.gl/maps/quS8gy3XshYezAPM9">Avenida Tecnológico 1500, 58120 Morelia, Mich.</a>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Telefono</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">+(52) 445-179-96-87</a>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Correo</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">fas_itm@hotmail.com</a>
+                  </li>
+                </ul>
+
+              </div>
+      <!-- Grid column -->
+
+            </div>
+    <!-- Grid row -->
+
+              </div>
+              <!-- Footer Links -->
+            <hr>
+
+              <!-- Social buttons -->
+              <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/ITMoreliaOficial" class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-instagram"> </i>
+                  </a>
+                </li>
+              </ul>
+              <!-- Social buttons -->
+
+              <!-- Copyright -->
+              <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://mdbootstrap.com/"> Fábrica Académica de Software</a>
+              </div>
+              <!-- Copyright -->
+
             </footer>
         </section>
       
