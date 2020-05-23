@@ -16,7 +16,7 @@
   </head>
     
   <body style="background: #2f3232">
-    <div id="fb-root"></div>
+      <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0"></script>
       
      <nav class="navbar navbar-expand-lg navbar-light " style="background: #021428;">
@@ -52,20 +52,20 @@
 
       
       
-      <div class="text-center py-5 " style="background: #d7dbdb"> <!-- RESPONSABLES-->
-        <div class="row container-fluid" >
+      <div class="text-center py-5 " style="background: #d7dbdb;"> <!-- datos-->
+        <div class="row container-fluid" style="margin: auto">
             
-          <div class="col">
+          <div class="col-sm" >
               <h1 class="display-5 text-center">Ubicación</h1> <br><br>
-            <div class="map-responsive container shadow p-3 mb-5"  style="height: 468px;background: rgba(0,0,0,0.2)"> 
-            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.7575526004593!2d-101.18800878593527!3d19.72294363644487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf001c256ae856856!2sTechnological%20Institute%20of%20Morelia!5e0!3m2!1sen!2smx!4v1590122353320!5m2!1sen!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="map-responsive container shadow p-3 mb-5"  style="height: 465px;background: rgba(0,0,0,0.2)"> 
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.7575526004593!2d-101.18800878593527!3d19.72294363644487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf001c256ae856856!2sTechnological%20Institute%20of%20Morelia!5e0!3m2!1sen!2smx!4v1590122353320!5m2!1sen!2smx" width="400" height="400" frameborder="0" style="border:" allowfullscreen></iframe>
             </div><br><br>     
            </div>
             
-            <div class="col">
+            <div class="col-sm"  >
                 <h1 class="display-5 text-center">Enviar Datos</h1><br><br>
                 <div class="container shadow p-3 mb-5" style="background: rgba(0,0,0,0.2)">
-                <form action="enviar.php" method="post">
+                <form action="enviar.php" method="post"  >
                   <input class="nombre" type="text" name="Nombre" placeholder="Nombre" required >
                   <input class="correo" type="text" name="Correo" placeholder="correo" required>
                   <input class="telefono" type="text" name="telefono" placeholder="Telefono" required>
@@ -74,16 +74,19 @@
                 </form>
                 </div>    
             </div>
+            
           </div>
-        <h1 class="display-5 text-center">Comentarios</h1><br>
+          <h1 class="display-5 text-center">Dudas y Comentarios</h1><br>
       </div>
-    <div class="text-center py-5 " style="background: #d7dbdb; "> 
+      
+      
+      
       <div class="row container">
-          <div class="col container">
-            <div class="fb-comments container" data-href="https://dilanparedes99.github.io/F-A-S/Contactanos.html" data-numposts="5" data-width=""></div>
-          </div>
-        </div>
-     </div>
+          <div class="col">
+        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" style="height: 100px;" data-numposts="5" data-width="100%"></div>
+          </div>      
+      </div>
+    
         <section style="background:  #021428;  " > <!-- FOOTER -->
             <footer class="page-footer font-small stylish-color-dark pt-4 text-white container">
 
