@@ -1,0 +1,75 @@
+
+a.nav-link{    /* efecto para botones del nav bar */
+  background:transparent;
+  color:#fff;
+  border:none;
+  position:center;
+    height:30px;
+  font-size:1em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+a.nav-link:hover, a.navbar-brand:hover{
+  background:transparent;
+  color:#fff;
+}
+a.nav-link:before,a.nav-link:after, a.navbar-brand:before, a.navbar-brand:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #D96C75;
+  transition:400ms ease all;
+}
+a.nav-link:after, a.navbar-brand:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+a.nav-link:hover:before,a.nav-link:hover:after, a.navbar-brand:hover:before, a.navbar-brand:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+a.charge{   /* efecto para footer */
+  background:transparent;
+  color:#fff;
+  border:none;
+  position:center;
+    height:30px;
+  font-size:1em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+a.charge:hover{
+  background:transparent;
+  color:#fff;
+}
+a.charge:before,a.charge:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #D96C75;
+  transition:400ms ease all;
+}
+a.charge:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+a.charge:hover:before,a.charge:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
