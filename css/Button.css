@@ -38,7 +38,6 @@ a.nav-link:hover:before,a.nav-link:hover:after, a.navbar-brand:hover:before, a.n
 
 a.charge{   /* efecto para footer */
   background:transparent;
-  color:#fff;
   border:none;
   position:center;
     height:30px;
